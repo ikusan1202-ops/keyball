@@ -71,9 +71,6 @@ void oledkit_render_info_user(void) {
 #endif
 
 #ifdef COMBO_ENABLE
-const uint16_t PROGMEM my_jq[] = {KC_J, KC_Q, COMBO_END};
-
-#ifdef COMBO_ENABLE
 enum combos{
 JQ_QUES,
 JS_SING,
