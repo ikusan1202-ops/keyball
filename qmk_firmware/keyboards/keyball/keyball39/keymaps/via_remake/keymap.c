@@ -72,7 +72,7 @@ void oledkit_render_info_user(void) {
 
 #ifdef COMBO_ENABLE
 enum combos{
-JQ_QUES,
+JQ_QUES,  
 JS_SING,
 JW_DOUB,
 JB_BOU,
@@ -114,17 +114,17 @@ const uint16_t PROGMEM my_kl[] = {KC_K, KC_L, COMBO_END};
 const uint16_t PROGMEM my_fd[] = {KC_F, KC_D, COMBO_END};
 
 combo_t key_combos[] = {
-[JQ_QUES] = COMBO(my_jq, S(KC_SLSH)),
+[JQ_QUES] = COMBO(my_jq, KC_QUES),
 [JS_SING] = COMBO(my_js, S(KC_7)),
 [JW_DOUB] = COMBO(my_jw, S(KC_2)),
 [JB_BOU] = COMBO(my_jb, KC_PIPE),
 [FP_PER] = COMBO(my_fp, S(KC_5)),
 [JD_DOL] = COMBO(my_jd, S(KC_4)),
-[FU_UNDER] = COMBO(my_fu, KC_MINS),
-[JA_AND] = COMBO(my_ja, S(KC_4)),
-[FH_HUSH] = COMBO(my_fh, S(KC_3)),
-[JE_EXCL] = COMBO(my_je, S(KC_1)),
-[FN_NAMI] = COMBO(my_fn, KC_TILD),
+[FU_UNDER] = COMBO(my_fu, S(KC_INT1)),
+[JA_AND] = COMBO(my_ja, KC_AMPR),
+[FH_HUSH] = COMBO(my_fh, KC_HASH),
+[JE_EXCL] = COMBO(my_je, KC_EXLM),
+[FN_NAMI] = COMBO(my_fn, S(KC_EQL)),
 [JT_TASU] = COMBO(my_jt, KC_PLUS),
 [FY_YAMA] = COMBO(my_fy, KC_CIRC),
 [FK_KAKE] = COMBO(my_fk, LSFT(KC_8)),
