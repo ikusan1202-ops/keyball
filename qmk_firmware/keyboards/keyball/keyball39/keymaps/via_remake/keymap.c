@@ -114,7 +114,7 @@ const uint16_t PROGMEM my_kl[] = {KC_K, KC_L, COMBO_END};
 const uint16_t PROGMEM my_fd[] = {KC_F, KC_D, COMBO_END};
 
 combo_t key_combos[] = {
-[JQ_QUES] = COMBO(my_jq, KC_QUES),
+[JQ_QUES] = COMBO(my_jq, S(KC_1)),
 [JS_SING] = COMBO(my_js, KC_QUOT),
 [JW_DOUB] = COMBO(my_jw, KC_DQUO),
 [JB_BOU] = COMBO(my_jb, KC_PIPE),
