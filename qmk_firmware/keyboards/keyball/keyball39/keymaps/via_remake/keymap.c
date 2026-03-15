@@ -73,6 +73,8 @@ void oledkit_render_info_user(void) {
 #ifdef COMBO_ENABLE
 enum combos{
 JQ_QUES,  
+JC_COL
+JV_SCOL
 JS_SING,
 JW_DOUB,
 JB_BOU,
@@ -94,6 +96,8 @@ FD_LAYER,
 };
 
 const uint16_t PROGMEM my_jq[] = {KC_J, KC_Q, COMBO_END};
+const uint16_t PROGMEM my_jc[] = {KC_J, KC_C, COMBO_END};
+const uint16_t PROGMEM my_jv[] = {KC_J, KC_V, COMBO_END};
 const uint16_t PROGMEM my_js[] = {KC_J, KC_S, COMBO_END};
 const uint16_t PROGMEM my_jw[] = {KC_J, KC_W, COMBO_END};
 const uint16_t PROGMEM my_jb[] = {KC_J, KC_B, COMBO_END};
@@ -115,23 +119,24 @@ const uint16_t PROGMEM my_fd[] = {KC_F, KC_D, COMBO_END};
 
 combo_t key_combos[] = {
 [JQ_QUES] = COMBO(my_jq, KC_QUES),
+[JC_COL] = COMBO(my_jc, KC_COL),
+[JV_SCOL] = COMBO(my_jv, KC_SCOL),
 [JS_SING] = COMBO(my_js, S(KC_7)),
 [JW_DOUB] = COMBO(my_jw, S(KC_2)),
-[JB_BOU] = COMBO(my_jb, KC_PIPE),
+[JB_BOU] = COMBO(my_jb, S(KC_INT3)),
 [FP_PER] = COMBO(my_fp, S(KC_5)),
 [JD_DOL] = COMBO(my_jd, S(KC_4)),
 [FU_UNDER] = COMBO(my_fu, S(KC_INT1)),
-[JA_AND] = COMBO(my_ja, KC_AMPR),
-[FH_HUSH] = COMBO(my_fh, KC_HASH),
-[JE_EXCL] = COMBO(my_je, KC_EXLM),
+[JA_AND] = COMBO(my_ja, S(KC_6)),
+[FH_HUSH] = COMBO(my_fh, S(KC_3)),
+[JE_EXCL] = COMBO(my_je, S(KC_1)),
 [FN_NAMI] = COMBO(my_fn, S(KC_EQL)),
-[JT_TASU] = COMBO(my_jt, KC_PLUS),
-[FY_YAMA] = COMBO(my_fy, KC_CIRC),
-[FK_KAKE] = COMBO(my_fk, LSFT(KC_8)),
+[JT_TASU] = COMBO(my_jt, S(KC_SCLN)),
+[FY_YAMA] = COMBO(my_fy, KC_EQL),
+[FK_KAKE] = COMBO(my_fk, S(KC_QUOT)),
 [UI_UP] = COMBO(my_ui, KC_UP),
 [MC_DOWN] = COMBO(my_mco, KC_DOWN),
 [JK_LEFT] = COMBO(my_jk, KC_LEFT),
 [KL_RIGHT] = COMBO(my_kl, KC_RGHT),
 [FD_LAYER] = COMBO(my_fd, MO(4)),
-};
 #endif
