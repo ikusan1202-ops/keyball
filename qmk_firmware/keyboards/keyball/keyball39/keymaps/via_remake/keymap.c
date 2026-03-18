@@ -88,11 +88,8 @@ FN_NAMI,
 JT_TASU,
 FY_YAMA,
 FK_KAKE,
-UI_UP,
-MC_DOWN,
-JK_LEFT,
-KL_RIGHT,
 FD_LAYER,
+JK_LAYER,
 };
 
 const uint16_t PROGMEM my_jq[] = {KC_J, KC_Q, COMBO_END};
@@ -111,11 +108,8 @@ const uint16_t PROGMEM my_fn[] = {KC_F, KC_N, COMBO_END};
 const uint16_t PROGMEM my_jt[] = {KC_J, KC_T, COMBO_END};
 const uint16_t PROGMEM my_fy[] = {KC_F, KC_Y, COMBO_END};
 const uint16_t PROGMEM my_fk[] = {KC_F, KC_K, COMBO_END};
-const uint16_t PROGMEM my_ui[] = {KC_U, KC_I, COMBO_END};
-const uint16_t PROGMEM my_mco[] = {KC_M, KC_COMM, COMBO_END};
-const uint16_t PROGMEM my_jk[] = {KC_J, KC_K, COMBO_END};
-const uint16_t PROGMEM my_kl[] = {KC_K, KC_L, COMBO_END};
 const uint16_t PROGMEM my_fd[] = {KC_F, KC_D, COMBO_END};
+const uint16_t PROGMEM my_jk[] = {KC_J, KC_K, COMBO_END};
 
 combo_t key_combos[] = {
 [JQ_QUES] = COMBO(my_jq, KC_QUES),
@@ -127,18 +121,15 @@ combo_t key_combos[] = {
 [FP_PER] = COMBO(my_fp, S(KC_5)),
 [JD_DOL] = COMBO(my_jd, S(KC_4)),
 [FU_UNDER] = COMBO(my_fu, S(KC_INT1)),
-[JA_AND] = COMBO(my_ja, S(KC_6)),
+[JA_AND] = COMBO(my_ja, S(KC_6)), 
 [FH_HUSH] = COMBO(my_fh, S(KC_3)),
 [JE_EXCL] = COMBO(my_je, S(KC_1)),
 [FN_NAMI] = COMBO(my_fn, S(KC_EQL)),
 [JT_TASU] = COMBO(my_jt, S(KC_SCLN)),
 [FY_YAMA] = COMBO(my_fy, KC_EQL),
 [FK_KAKE] = COMBO(my_fk, S(KC_QUOT)),
-[UI_UP] = COMBO(my_ui, KC_UP),
-[MC_DOWN] = COMBO(my_mco, KC_DOWN),
-[JK_LEFT] = COMBO(my_jk, KC_LEFT),
-[KL_RIGHT] = COMBO(my_kl, KC_RGHT),
 [FD_LAYER] = COMBO(my_fd, MO(4)),
+[JK_LAYER] = COMBO(my_jk, MO(5)),
 };
 
 #endif
