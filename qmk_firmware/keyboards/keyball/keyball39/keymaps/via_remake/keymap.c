@@ -90,12 +90,10 @@ FY_YAMA,
 FK_KAKE,
 FD_LAYER,
 JK_LAYER,
-YU_UP
-NM_DOWN
-HJ_LEFT
-KL_RIGHT
-
-
+YU_UP,
+NM_DOWN,
+HJ_LEFT,
+KL_RIGHT,
 };
 
 const uint16_t PROGMEM my_jq[] = {KC_J, KC_Q, COMBO_END};
@@ -143,7 +141,6 @@ combo_t key_combos[] = {
 [NM_DOWN] = COMBO(my_nm, KC_DOWN),
 [HJ_LEFT] = COMBO(my_hj, KC_LEFT),
 [KL_RIGHT] = COMBO(my_kl, KC_RGHT),
-
 };
 
 #endif
