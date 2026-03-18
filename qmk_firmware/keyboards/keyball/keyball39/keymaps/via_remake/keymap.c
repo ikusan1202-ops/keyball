@@ -114,10 +114,10 @@ const uint16_t PROGMEM my_fy[] = {KC_F, KC_Y, COMBO_END};
 const uint16_t PROGMEM my_fk[] = {KC_F, KC_K, COMBO_END};
 const uint16_t PROGMEM my_fd[] = {KC_F, KC_D, COMBO_END};
 const uint16_t PROGMEM my_jk[] = {KC_J, KC_K, COMBO_END};
-const uint16_t PROGMEM my_hj[] = {KC_H, KC_J, COMBO_END};
-const uint16_t PROGMEM my_kl[] = {KC_K, KC_L, COMBO_END};
 const uint16_t PROGMEM my_yu[] = {KC_Y, KC_U, COMBO_END};
 const uint16_t PROGMEM my_nm[] = {KC_N, KC_M, COMBO_END};
+const uint16_t PROGMEM my_hj[] = {KC_H, KC_J, COMBO_END};
+const uint16_t PROGMEM my_kl[] = {KC_K, KC_L, COMBO_END};
 
 combo_t key_combos[] = {
 [JQ_QUES] = COMBO(my_jq, KC_QUES),
