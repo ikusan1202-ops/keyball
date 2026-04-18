@@ -73,48 +73,45 @@ void oledkit_render_info_user(void) {
 #ifdef COMBO_ENABLE
 enum combos{
 JQ_QUES,  
-JS_SING,
-JW_DOUB,
-FP_PER,
-JD_DOL,
 FU_UNDER,
-JE_EXCL,
 FN_NAMI,
 JT_TASU,
 FY_YAMA,
 FK_KAKE,
+HJ_LEFT,
+KL_RIGHT,
+IO_BACK,
+COP_ESC,
 FD_LAYER,
 JK_LAYER,
 
 };
 
 const uint16_t PROGMEM my_jq[] = {KC_J, KC_Q, COMBO_END};
-const uint16_t PROGMEM my_js[] = {KC_J, KC_S, COMBO_END};
-const uint16_t PROGMEM my_jw[] = {KC_J, KC_W, COMBO_END};
-const uint16_t PROGMEM my_fp[] = {KC_F, KC_P, COMBO_END};
-const uint16_t PROGMEM my_jd[] = {KC_J, KC_D, COMBO_END};
 const uint16_t PROGMEM my_fu[] = {KC_F, KC_U, COMBO_END};
-const uint16_t PROGMEM my_je[] = {KC_J, KC_E, COMBO_END};
 const uint16_t PROGMEM my_fn[] = {KC_F, KC_N, COMBO_END};
 const uint16_t PROGMEM my_jt[] = {KC_J, KC_T, COMBO_END};
 const uint16_t PROGMEM my_fy[] = {KC_F, KC_Y, COMBO_END};
 const uint16_t PROGMEM my_fk[] = {KC_F, KC_K, COMBO_END};
+const uint16_t PROGMEM my_hj[] = {KC_H, KC_L, COMBO_END};
+const uint16_t PROGMEM my_kl[] = {KC_K, KC_L, COMBO_END};
+const uint16_t PROGMEM my_io[] = {KC_I, KC_O, COMBO_END};
+const uint16_t PROGMEM my_cop[] = {KC_COMM, KC_DOT, COMBO_END};
 const uint16_t PROGMEM my_fd[] = {KC_F, KC_D, COMBO_END};
 const uint16_t PROGMEM my_jk[] = {KC_J, KC_K, COMBO_END};
 
 
 combo_t key_combos[] = {
 [JQ_QUES] = COMBO(my_jq, KC_QUES),
-[JS_SING] = COMBO(my_js, S(KC_7)),
-[JW_DOUB] = COMBO(my_jw, S(KC_2)),
-[FP_PER] = COMBO(my_fp, S(KC_5)),
-[JD_DOL] = COMBO(my_jd, S(KC_4)),
 [FU_UNDER] = COMBO(my_fu, S(KC_INT1)),
-[JE_EXCL] = COMBO(my_je, S(KC_1)),
 [FN_NAMI] = COMBO(my_fn, S(KC_EQL)),
 [JT_TASU] = COMBO(my_jt, S(KC_SCLN)),
 [FY_YAMA] = COMBO(my_fy, KC_EQL),
 [FK_KAKE] = COMBO(my_fk, S(KC_QUOT)),
+[JK_LEFT] = COMBO(my_jk, KC_LEFT),
+[KL_RIGHT] = COMBO(my_kl, KC_RGHT),
+[IO_BACK] = COMBO(my_io, KC_BSPC),
+[IO_ESP]  = COMBO(my_cop, KC_DOT),
 [FD_LAYER] = COMBO(my_fd, MO(4)),
 [JK_LAYER] = COMBO(my_jk, MO(5)),
 };
