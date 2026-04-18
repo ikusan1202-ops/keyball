@@ -83,7 +83,6 @@ KL_RIGHT,
 IO_BACK,
 FD_LAYER,
 JK_LAYER,
-
 };
 
 const uint16_t PROGMEM my_jq[] = {KC_J, KC_Q, COMBO_END};
