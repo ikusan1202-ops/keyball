@@ -108,10 +108,10 @@ combo_t key_combos[] = {
 [JT_TASU] = COMBO(my_jt, S(KC_SCLN)),
 [FY_YAMA] = COMBO(my_fy, KC_EQL),
 [FK_KAKE] = COMBO(my_fk, S(KC_QUOT)),
-[JK_LEFT] = COMBO(my_jk, KC_LEFT),
+[HJ_LEFT] = COMBO(my_hj, KC_LEFT),
 [KL_RIGHT] = COMBO(my_kl, KC_RGHT),
 [IO_BACK] = COMBO(my_io, KC_BSPC),
-[IO_ESP]  = COMBO(my_cop, KC_DOT),
+[COP_ESC]  = COMBO(my_cop, KC_DOT),
 [FD_LAYER] = COMBO(my_fd, MO(4)),
 [JK_LAYER] = COMBO(my_jk, MO(5)),
 };
