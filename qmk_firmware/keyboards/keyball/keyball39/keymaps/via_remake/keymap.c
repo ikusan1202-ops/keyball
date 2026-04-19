@@ -73,7 +73,6 @@ void oledkit_render_info_user(void) {
 #ifdef COMBO_ENABLE
 enum combos{
 
-"キー"
 JQ_QUES,  
 FU_UNDER,
 FN_NAMI,
@@ -81,29 +80,24 @@ JT_TASU,
 FY_YAMA,
 FK_KAKE,
 
-"カーソル"
 UI_UP,
 MC_DOWN,
 JK_LEFT,
 KL_RIGHT,
 
-"操作"
 IO_BACK,  
 NM_DEL,
 SD_TAB,
 CV_ESC,
 
-"ページ遷移"
 WE_PAGEUP,
 ER_PAGEDOWN,
 
-"レイヤー"
 FD_LAYER,
 HJ_LAYER,
 
 };
 
-"文字"
 const uint16_t PROGMEM my_jq[] = {KC_J, KC_Q, COMBO_END};
 const uint16_t PROGMEM my_fu[] = {KC_F, KC_U, COMBO_END};
 const uint16_t PROGMEM my_fn[] = {KC_F, KC_N, COMBO_END};
@@ -111,30 +105,25 @@ const uint16_t PROGMEM my_jt[] = {KC_J, KC_T, COMBO_END};
 const uint16_t PROGMEM my_fy[] = {KC_F, KC_Y, COMBO_END};
 const uint16_t PROGMEM my_fk[] = {KC_F, KC_K, COMBO_END};
 
-"カーソル"
 const uint16_t PROGMEM my_ui[] = {KC_U, KC_I, COMBO_END};
 const uint16_t PROGMEM my_mco[] = {KC_M, KC_COMM, COMBO_END};
 const uint16_t PROGMEM my_jk[] = {KC_J, KC_K, COMBO_END};
 const uint16_t PROGMEM my_kl[] = {KC_K, KC_L, COMBO_END};
 
-"操作"
 const uint16_t PROGMEM my_io[] = {KC_I, KC_O, COMBO_END};
 const uint16_t PROGMEM my_nm[] = {KC_N, KC_M, COMBO_END};
 const uint16_t PROGMEM my_sd[] = {KC_S, KC_D, COMBO_END};
 const uint16_t PROGMEM my_cv[] = {KC_C, KC_V, COMBO_END};
 
-"ページ遷移"
 const uint16_t PROGMEM my_we[] = {KC_W, KC_E, COMBO_END};
 const uint16_t PROGMEM my_er[] = {KC_E, KC_R, COMBO_END};
 
-"レイヤー"
 const uint16_t PROGMEM my_fd[] = {KC_F, KC_D, COMBO_END};
 const uint16_t PROGMEM my_hj[] = {KC_H, KC_J, COMBO_END};
 
 
 combo_t key_combos[] = {
 
- "文字"
 [JQ_QUES] = COMBO(my_jq, KC_QUES),
 [FU_UNDER] = COMBO(my_fu, S(KC_INT1)),
 [FN_NAMI] = COMBO(my_fn, S(KC_EQL)),
@@ -142,23 +131,19 @@ combo_t key_combos[] = {
 [FY_YAMA] = COMBO(my_fy, KC_EQL),
 [FK_KAKE] = COMBO(my_fk, S(KC_QUOT)),
 
-"カーソル"
 [UI_UP] = COMBO(my_ui, KC_UP),
 [MC_DOWN] = COMBO(my_mco, KC_DOWN),
 [JK_LEFT] = COMBO(my_jk, KC_LEFT),
 [KL_RIGHT] = COMBO(my_kl, KC_RGHT),
 
-"操作"
 [IO_BACK] = COMBO(my_io, KC_BSPC),
 [NM_DEL] = COMBO(my_nm, KC_DEL),
 [SD_TAB] = COMBO(my_sd, KC_TAB),
 [CV_ESC] = COMBO(my_cv, KC_ESC),
 
-"ページ遷移"
 [WE_PAGEUP] = COMBO(my_we, KC_PGUP),
 [ER_PAGEDOWN] = COMBO(my_er, KC_PGDN),
 
-"レイヤー"
 [FD_LAYER] = COMBO(my_fd, MO(4)),
 [JK_LAYER] = COMBO(my_hj, MO(5)),
 
