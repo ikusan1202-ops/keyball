@@ -146,7 +146,6 @@ combo_t key_combos[] = {
 
 [FD_LAYER] = COMBO(my_fd, MO(4)),
 [JK_LAYER] = COMBO(my_hj, MO(5)),
-
 };
 #endif
 
