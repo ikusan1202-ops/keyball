@@ -81,6 +81,11 @@ FK_KAKE,
 HJ_LEFT,
 KL_RIGHT,
 IO_BACK,
+
+NM_DEL,
+WE_PAGEUP,
+ER_PAGEDOWN,
+
 FD_LAYER,
 JK_LAYER,
 };
@@ -94,6 +99,11 @@ const uint16_t PROGMEM my_fk[] = {KC_F, KC_K, COMBO_END};
 const uint16_t PROGMEM my_hj[] = {KC_H, KC_J, COMBO_END};
 const uint16_t PROGMEM my_kl[] = {KC_K, KC_L, COMBO_END};
 const uint16_t PROGMEM my_io[] = {KC_I, KC_O, COMBO_END};
+
+const uint16_t PROGMEM my_nm[] = {KC_N, KC_M, COMBO_END};
+const uint16_t PROGMEM my_we[] = {KC_W, KC_E, COMBO_END};
+const uint16_t PROGMEM my_er[] = {KC_E, KC_R, COMBO_END};
+
 const uint16_t PROGMEM my_fd[] = {KC_F, KC_D, COMBO_END};
 const uint16_t PROGMEM my_jk[] = {KC_J, KC_K, COMBO_END};
 
@@ -108,6 +118,11 @@ combo_t key_combos[] = {
 [HJ_LEFT] = COMBO(my_hj, KC_LEFT),
 [KL_RIGHT] = COMBO(my_kl, KC_RGHT),
 [IO_BACK] = COMBO(my_io, KC_BSPC),
+
+[NM_DEL] = COMBO(my_nm, KC_DEL),
+[WE_PAGEUP] = COMBO(my_we, KC_PGUP),
+[ER_PAGEDOWN] = COMBO(my_er, KC_PGDN),
+
 [FD_LAYER] = COMBO(my_fd, MO(4)),
 [JK_LAYER] = COMBO(my_jk, MO(5)),
 };
