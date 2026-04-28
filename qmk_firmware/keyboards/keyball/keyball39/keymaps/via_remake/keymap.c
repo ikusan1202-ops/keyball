@@ -139,7 +139,7 @@ combo_t key_combos[] = {
 [KL_RIGHT] = COMBO(my_kl, KC_RGHT),
 
 [IO_BACK] = COMBO(my_io, KC_BSPC),
-[k89_BACK] = COMBO(kmy_89, KC_BSPC),
+[k89_BACK] = COMBO(my_k89, KC_BSPC),
 [NM_DEL] = COMBO(my_nm, KC_DEL),
 [SD_TAB] = COMBO(my_sd, KC_TAB),
 [CV_ESC] = COMBO(my_cv, KC_ESC),
