@@ -85,7 +85,8 @@ MC_DOWN,
 JK_LEFT,
 KL_RIGHT,
 
-IO_BACK,  
+IO_BACK, 
+k89_BACK, 
 NM_DEL,
 SD_TAB,
 CV_ESC,
@@ -111,6 +112,7 @@ const uint16_t PROGMEM my_jk[] = {KC_J, KC_K, COMBO_END};
 const uint16_t PROGMEM my_kl[] = {KC_K, KC_L, COMBO_END};
 
 const uint16_t PROGMEM my_io[] = {KC_I, KC_O, COMBO_END};
+const uint16_t PROGMEM my_k89[] = {KC_8, KC_9, COMBO_END};
 const uint16_t PROGMEM my_nm[] = {KC_N, KC_M, COMBO_END};
 const uint16_t PROGMEM my_sd[] = {KC_S, KC_D, COMBO_END};
 const uint16_t PROGMEM my_cv[] = {KC_C, KC_V, COMBO_END};
@@ -137,6 +139,7 @@ combo_t key_combos[] = {
 [KL_RIGHT] = COMBO(my_kl, KC_RGHT),
 
 [IO_BACK] = COMBO(my_io, KC_BSPC),
+[k89_BACK] = COMBO(kmy_89, KC_BSPC),
 [NM_DEL] = COMBO(my_nm, KC_DEL),
 [SD_TAB] = COMBO(my_sd, KC_TAB),
 [CV_ESC] = COMBO(my_cv, KC_ESC),
